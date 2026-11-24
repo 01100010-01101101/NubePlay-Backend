@@ -50,7 +50,7 @@ public final class AuthDto {
             @Size(max = 100, message = "Los apellidos admiten máximo 100 caracteres.") String apellidos,
             @Schema(example = "juan@gmail.com") @NotBlank(message = "El correo es obligatorio.")
             @jakarta.validation.constraints.Pattern(regexp = UsuarioDto.REGEX_CORREO,
-                    message = "El correo debe ser @duoc.cl, @profesor.duoc.cl o @gmail.com.") String correo,
+                    message = "El correo debe ser @duoc.cl, @profesor.duoc.cl, @duocuc.cl o @gmail.com.") String correo,
             @Schema(example = "clave123") @NotBlank(message = "La contraseña es obligatoria.")
             @Size(min = 4, max = 10, message = "La contraseña debe tener entre 4 y 10 caracteres.") String password,
             @Schema(example = "2000-05-20") String fechaNacimiento,

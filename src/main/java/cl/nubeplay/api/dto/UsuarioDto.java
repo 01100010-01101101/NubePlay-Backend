@@ -14,7 +14,7 @@ public final class UsuarioDto {
 
 
 
-    public static final String REGEX_CORREO = "(?i)^[\\w.+-]+@(duoc\\.cl|profesor\\.duoc\\.cl|gmail\\.com)$";
+    public static final String REGEX_CORREO = "(?i)^[\\w.+-]+@(duoc\\.cl|duocuc\\.cl|profesor\\.duoc\\.cl|gmail\\.com)$";
 
 
     private UsuarioDto() {
@@ -52,7 +52,7 @@ public final class UsuarioDto {
             @Schema(example = "Rojas") @NotBlank(message = "Los apellidos son obligatorios.")
             @Size(max = 100, message = "Los apellidos admiten máximo 100 caracteres.") String apellidos,
             @Schema(example = "ana@duoc.cl") @NotBlank(message = "El correo es obligatorio.")
-            @Pattern(regexp = REGEX_CORREO, message = "El correo debe ser @duoc.cl, @profesor.duoc.cl o @gmail.com.") String correo,
+            @Pattern(regexp = REGEX_CORREO, message = "El correo debe ser @duoc.cl, @profesor.duoc.cl, @duocuc.cl o @gmail.com.") String correo,
             @Schema(example = "clave123", description = "Obligatoria al crear; opcional al editar")
             @Size(max = 10, message = "La contraseña admite máximo 10 caracteres.") String password,
             @Schema(example = "1995-03-10") String fechaNacimiento,

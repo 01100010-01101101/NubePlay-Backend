@@ -56,7 +56,7 @@ public class AuthService {
         }
         String correo = google.correo().trim().toLowerCase();
         if (!correo.matches(UsuarioDto.REGEX_CORREO)) {
-            throw ApiException.prohibido("Solo se aceptan cuentas @duoc.cl, @profesor.duoc.cl o @gmail.com.");
+            throw ApiException.prohibido("Solo se aceptan cuentas @duoc.cl, @profesor.duoc.cl, @duocuc.cl o @gmail.com.");
         }
 
 

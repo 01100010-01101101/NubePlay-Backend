@@ -28,7 +28,7 @@ public final class BoletaDto {
             @Size(max = 100, message = "Los apellidos admiten máximo 100 caracteres.") String apellidos,
             @Schema(example = "juan@gmail.com") @NotBlank(message = "El correo del comprador es obligatorio.")
             @jakarta.validation.constraints.Pattern(regexp = UsuarioDto.REGEX_CORREO,
-                    message = "El correo debe ser @duoc.cl, @profesor.duoc.cl o @gmail.com.") String correo) {
+                    message = "El correo debe ser @duoc.cl, @profesor.duoc.cl, @duocuc.cl o @gmail.com.") String correo) {
     }
 
 
